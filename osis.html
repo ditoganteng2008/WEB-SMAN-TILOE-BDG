@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht,initial-scale=1.0">
+    <title>SMAN 3 BANDUNG</title>
+    <link rel="stylesheet" href="css project sekolah.css">
+</head>
+<body>
+ <div class="widht-100 top-header"> 
+<div class="container">
+<div class="widht-100">
+<b class="newslist">BERITA:</b>
+<marquee class="headquote">SMA Negeri 3 Bandung, merupakan salah satu Sekolah 
+    Menengah Atas Negeri yang ada di Provinsi Jawa Barat, Indonesia</marquee>
+
+</div>
+</div>
+</div>   
+
+<div class="widht-100 header-menu">
+<div class="container">
+<div class="logo"> <img src="logo sman tiga.jpeg" height="100px" weight="100px">
+<ul class="main-menu">
+    <li><a href="home.html"></a>
+        <div class="dropdown">
+            <button class="dropbtn">about us</button>
+            <div class="dropdown-content">
+            <a href="osis.html">osis</a>
+            <a href="sejarah.html">sejarah</a>
+            <a href="logo sekolah.html">Logo sekolah</a>
+            <a href="visimisi.html">Visi & Misi</a>
+            
+            </div>
+          </div>      
+</li>
+
+<li><a href="gallery2.html"></a>
+    <div class="dropdown">
+        <button class="dropbtn">Gallery</button>
+        <div class="dropdown-content">
+        <a href="acara-sekolah.html">Acara sekolah</a>
+        <a href="guru-guru.html">Guru-guru</a>
+        
+        </div>
+      </div>  
+      
+      <li><a href="prestasi.html"></a>
+        <div class="dropdown">
+            <button class="dropbtn">prestasi</button>
+            <div class="dropdown-content">
+            <a href="prestasi siswa.html">siswa</a>
+            <a href="prestasi guru.html">guru</a>
+            
+            </div>
+          </div>     
+
+          
+
+              <li><a href="contact us.html"></a>
+        <div class="dropdown">
+            <button class="dropbtn">contact us</button>
+            <div class="dropdown-content">
+            <a href="contact us.html">kontak</a>
+          
+            
+            </div>
+          </div>     
+</ul>
+</div>
+</div>
+</div>
+
+<div class="widht-100">
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="tiga.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="gambar sekolah sman3.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="sman tiga tempo dulu.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
